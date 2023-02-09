@@ -17,9 +17,9 @@ export const PresentationLeftSide = styled.section`
   width: 60%;
   z-index: 5;
 
-  @media (max-height: 800px) {
+  /* @media (max-height: 800px) {
     gap: 3rem;
-  }
+  } */
 
 `
 
@@ -36,9 +36,9 @@ export const PresentationTextAnButtons = styled.div`
     font-weight: 400;
     line-height: 6.125rem;
     
-    @media (max-width: 1440px) {
+    /* @media (max-width: 1440px) {
       font-size: 4rem;
-    }
+    } */
 
     span {
       position: relative;
@@ -71,11 +71,11 @@ export const PresentationTextAnButtons = styled.div`
     font-weight: 400;
     line-height: 2rem;
 
-    @media (max-width: 1440px) {
+    /* @media (max-width: 1440px) {
       max-width: 40rem;
 
       font-size: 1.15rem;
-    }
+    } */
   }
   div {
     display: flex;

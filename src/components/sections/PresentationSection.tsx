@@ -11,7 +11,7 @@ import DefaultButton from '../DefaultButton'
 
 import Image from 'next/image'
 
-export default function PresentationSection() {
+export function PresentationSection() {
   return (
     <PresentationSectionWrapper>
       <PresentationLeftSide>
@@ -54,6 +54,7 @@ export default function PresentationSection() {
           width={870}
           height={970}
           quality={100}
+          priority
         />
       </PresentationRightSide>
     </PresentationSectionWrapper>

@@ -5,6 +5,11 @@ interface ButtonProps {
 }
 
 export const Button = styled.button<ButtonProps>`
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+  
   padding: 0 2rem;
 
   color: ${props => !props.secondary ?  props.theme.gray50 :  props.theme.gray900};
