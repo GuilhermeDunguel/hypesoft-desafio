@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const AboutSectionContainer = styled.section`
-  margin-top: 8.25rem;
+  margin: 8.25rem auto 0;
 
-  /* max-width: 82.5rem; */
+  max-width: 82.5rem;
 
   display: flex;
   align-items: center;
