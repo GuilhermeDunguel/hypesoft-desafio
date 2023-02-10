@@ -4,14 +4,14 @@ export const PresentationSectionWrapper = styled.section`
   display: flex;
   align-items: center;
 
-  margin-left: 300px;
+  margin-left: 18.75rem;
 
   @media (max-width: 1680px) {
-    margin-left: 150px;
+    margin-left: 9.375rem;
   }
 
   @media (max-width: 1440px) {
-    margin-left: 100px;
+    margin-left: 6.25rem;
 }
 `
 
@@ -100,20 +100,20 @@ export const PresentationRightSide = styled.div`
 export const FollowMeOnDiv = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.75rem;
 
   span {
     color: ${props => props.theme.gray50};
-    font-size: 16px;
-    font-weight: 400px;
+    font-size: 1rem;
+    font-weight: 400;
   }
 
   div {
     display: flex;
-    gap: 12px;
+    gap: 0.75rem;
 
     a {
-      padding: 14px;
+      padding: 0.875rem;
 
       color: ${props => props.theme.gray800};
       line-height: 0;

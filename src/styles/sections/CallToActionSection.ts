@@ -5,10 +5,11 @@ export const CallToActionSectionContainer = styled.section`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 2.25rem;
 
   position: relative;
 
-  gap: 2.25rem;
+  margin: 13.75rem auto 0;
 
   max-width: 82.5rem;
   max-height: 19.5rem;
@@ -16,7 +17,7 @@ export const CallToActionSectionContainer = styled.section`
   width: 82.5rem;
   height: 19.5rem;
 
-  margin: 13.75rem auto 0;
+  
   background-image: url('/Banner.svg');
   background-size: cover;
   background-repeat: no-repeat;

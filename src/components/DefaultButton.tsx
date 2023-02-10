@@ -15,7 +15,7 @@ export default function DefaultButton({
   link,
 }: DefaultButtonProps) {
   return (
-    <Button secondary={secondary}>
+    <Button secondary={secondary} type="submit">
       <span>{label.toUpperCase()}</span>
       {icon}
       {link ? <a href={link} target="blank" /> : null}
