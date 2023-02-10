@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CompaniesIveWorkedContainer = styled.section`
   max-width: 82.5rem;
-  margin: 220px auto 0;
+  margin: 13.75rem auto 0;
 
   display: flex;
   align-items: center;

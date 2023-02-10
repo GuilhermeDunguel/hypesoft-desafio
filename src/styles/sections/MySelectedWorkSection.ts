@@ -4,7 +4,7 @@ export const MySelectedWorkContainer = styled.section`
   
   max-width: 1320px;
 
-  margin: 220px auto 0;
+  margin: 13.75rem auto 0;
 
   display: flex;
   align-items: center; 

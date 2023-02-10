@@ -6,6 +6,7 @@ import { AboutSection } from '@/components/sections/AboutSection'
 import { MyServiceSection } from '@/components/sections/MyServiceSection'
 import { MySelectedWorkSection } from '@/components/sections/MySelectedWorkSection'
 import { CompaniesIveWorked } from '@/components/sections/CompaniesIveWorked'
+import { CallToActionSection } from '@/components/sections/CallToActionSection'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,6 +33,7 @@ export default function Home() {
         <MyServiceSection />
         <MySelectedWorkSection />
         <CompaniesIveWorked />
+        <CallToActionSection />
       </Main>
     </>
   )

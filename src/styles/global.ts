@@ -21,4 +21,20 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 75%;
     }
   }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ED1CA6;
+    &:hover {
+      background: #ED3CB1;
+    }
+  }
 `
