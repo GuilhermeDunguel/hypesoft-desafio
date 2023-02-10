@@ -3,10 +3,19 @@ import styled from 'styled-components'
 export const PresentationSectionWrapper = styled.section`
   display: flex;
   align-items: center;
-  
+
+  margin-left: 300px;
+
+  @media (max-width: 1680px) {
+    margin-left: 150px;
+  }
+
+  @media (max-width: 1440px) {
+    margin-left: 100px;
+}
 `
 
-export const PresentationLeftSide = styled.section`
+export const PresentationLeftSide = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -17,9 +26,6 @@ export const PresentationLeftSide = styled.section`
   width: 60%;
   z-index: 5;
 
-  /* @media (max-height: 800px) {
-    gap: 3rem;
-  } */
 
 `
 
@@ -29,16 +35,13 @@ export const PresentationTextAnButtons = styled.div`
   gap: 2rem;
 
   h1 {
-    max-width: 45.625rem;
+    max-width: 52rem;
 
     color: ${props => props.theme.gray50};
     font-size: 5rem;
     font-weight: 400;
     line-height: 6.125rem;
-    
-    /* @media (max-width: 1440px) {
-      font-size: 4rem;
-    } */
+  
 
     span {
       position: relative;
@@ -71,11 +74,6 @@ export const PresentationTextAnButtons = styled.div`
     font-weight: 400;
     line-height: 2rem;
 
-    /* @media (max-width: 1440px) {
-      max-width: 40rem;
-
-      font-size: 1.15rem;
-    } */
   }
   div {
     display: flex;
@@ -84,7 +82,7 @@ export const PresentationTextAnButtons = styled.div`
 
 `
 
-export const PresentationRightSide = styled.section`
+export const PresentationRightSide = styled.div`
   flex: 1;
 
   height: 90vh;
@@ -94,9 +92,7 @@ export const PresentationRightSide = styled.section`
   img {
     object-fit: cover;
     margin-left: -55%;
-    /* margin-bottom: -5px; */
     width: 135%;
-    /* max-width: 200%; */
     height: 100%;
   }
 `

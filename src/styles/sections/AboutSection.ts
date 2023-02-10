@@ -7,10 +7,8 @@ export const AboutSectionContainer = styled.section`
 
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
-
+  
   gap: 5.5rem;
-
 `
 
 export const AboutImageWrapper = styled.div`
@@ -19,6 +17,11 @@ export const AboutImageWrapper = styled.div`
 
   width: 35rem;
   height: 33.875rem;
+
+  img {
+    object-fit: cover;
+    border-radius: 10px;
+  }
 
   &::after {
     position: absolute;
@@ -30,7 +33,7 @@ export const AboutImageWrapper = styled.div`
     width: 35rem;
     height: 33.875rem;
 
-    border-radius: 0.625rem;
+    border-radius: 10px;
     background-color: ${props => props.theme.gray50};
   }
 `
@@ -49,7 +52,7 @@ export const AboutTextsWrapper = styled.div`
     font-size: 3rem;
     font-weight: 500;
     line-height: 3.5rem;
-    max-width: 34.375rem;
+    max-width: 39rem;
   }
 
   p {

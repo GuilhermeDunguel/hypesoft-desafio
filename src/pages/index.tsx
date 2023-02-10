@@ -4,6 +4,8 @@ import { Header, Main } from '../styles/index'
 import { PresentationSection } from '@/components/sections/PresentationSection'
 import { AboutSection } from '@/components/sections/AboutSection'
 import { MyServiceSection } from '@/components/sections/MyServiceSection'
+import { MySelectedWorkSection } from '@/components/sections/MySelectedWorkSection'
+import { CompaniesIveWorked } from '@/components/sections/CompaniesIveWorked'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,6 +30,8 @@ export default function Home() {
         <PresentationSection />
         <AboutSection />
         <MyServiceSection />
+        <MySelectedWorkSection />
+        <CompaniesIveWorked />
       </Main>
     </>
   )

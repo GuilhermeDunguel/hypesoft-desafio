@@ -5,6 +5,7 @@ interface ButtonProps {
 }
 
 export const Button = styled.button<ButtonProps>`
+  position: relative;
   display: flex;
   align-items: center;
 
@@ -24,6 +25,11 @@ export const Button = styled.button<ButtonProps>`
 
   transition: filter 0.2s;
   cursor: pointer;
+
+  a {
+    position: absolute;
+    inset: 0;
+  }
 
   &:hover {
     filter: brightness(90%);

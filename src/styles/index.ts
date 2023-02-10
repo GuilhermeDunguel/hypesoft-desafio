@@ -2,15 +2,6 @@ import styled from 'styled-components'
 
 export const Main = styled.main`
 
-  margin-left: 300px;
-
-  @media (max-width: 1680px) {
-    margin-left: 150px;
-  }
-
-  @media (max-width: 1440px) {
-    margin-left: 100px;
-  }
 `
 
 export const Header = styled.header`

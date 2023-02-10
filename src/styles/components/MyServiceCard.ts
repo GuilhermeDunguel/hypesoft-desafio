@@ -32,9 +32,9 @@ export const MyServiceCardContainer = styled.div`
   }
 `
 
-export const MyServiceCardFooter = styled.div`
-  min-width: 18rem;
-  max-width: 19.5rem;
+export const MyServiceCardFooter = styled.footer`
+  min-width: 15rem;
+  max-width: 15rem;
 
   p {
 

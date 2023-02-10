@@ -14,26 +14,26 @@ export function AboutSection() {
   return (
     <AboutSectionContainer>
       <AboutImageWrapper>
-        <Image src={'https://i.imgur.com/4j4nP9e.png'} alt={''} fill />
+        <Image src={'https://i.imgur.com/FOFaDyr.jpg'} alt={''} fill />
       </AboutImageWrapper>
       <AboutTextsWrapper>
         <h2>
-          Software Engineer and Infrastructure specialist based in Brazil.
+          Front-end and Mobile Developer, focused on JavaScript&apos;s
+          Technologies.
         </h2>
         <p>
-          Morbi quam velit, euismod in imperdiet vitae, elementum et elit. Nunc
-          finibus, felis sit amet sollicitudin sollicitudin, nisi magna feugiat
-          enim, in maximus urna enim ac tortor. Nunc in volutpat ipsum, molestie
-          commodo odio. Quisque auctor nisi mi. Aenean venenatis sapien et
-          interdum interdum.
+          Throughout my career, i&apos;ve worked with the latest technologies,
+          aways focusing on understanding the customer needs and his
+          satisfaction. My objective as a Developer is to be the greatest i can
+          be, learning new technologies and exploring this universe that i love.
         </p>
         <AboutExperienceAndProjectsWrapper>
           <div>
-            <span>17+</span>
+            <span>1+</span>
             <p>Years of Experience</p>
           </div>
           <div>
-            <span>325+</span>
+            <span>28+</span>
             <p>Completed Projects</p>
           </div>
         </AboutExperienceAndProjectsWrapper>
