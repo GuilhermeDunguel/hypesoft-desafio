@@ -3,11 +3,10 @@ import styled from 'styled-components';
 export const MySelectedWorkCardContainer = styled.div`
   
   color: ${props => props.theme.gray800};
-
   
-  
-  filter: brightness(90%);
   transition: filter 0.2s;
+  
+  filter: brightness(95%);
 
   a {
     position: absolute;
@@ -45,11 +44,11 @@ export const MySelectedWorkCardImageWrapper = styled.div`
 export const MySelectedWorkCardFooter = styled.footer`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
   
   border-radius: 0 0 8px 8px;
   background-color: ${props => props.theme.gray50};
-  padding: 24px;
+  padding: 1.5rem;
 
   p {
     color: ${props => props.theme.gray800};
@@ -74,7 +73,7 @@ export const ViewProjectButtonWrapper = styled.button`
   span {
     display: none;
     color: ${props => props.theme.pink500};
-    margin-left: -120px;
+    margin-left: -7.5rem;
     font-size: 1rem;
     font-weight: 600;
   }

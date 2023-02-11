@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const ContactSectionContainer = styled.section`
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
 
   margin: 8.25rem auto 0;
   max-width: 82.5rem;
@@ -23,7 +23,7 @@ export const ContactSectionContainer = styled.section`
     h3 {
       font-size: 2rem;
       font-weight: 500;
-      line-height: 40px;
+      line-height: 2.5rem;
     }
   }
 `
@@ -99,7 +99,7 @@ export const ContactInfoWrapper = styled.div`
   .ContactInfoDiv {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
 
     div {
       padding: 1.5rem;

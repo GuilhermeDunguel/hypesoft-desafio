@@ -27,7 +27,7 @@ export const CompaniesIveWorkedContainer = styled.section`
 
         content: '';
         max-width: 5.5rem;
-        max-height: 20px;;
+        max-height: 1.25rem;;
         width: 100%;
         height: 100%;
 
@@ -45,6 +45,7 @@ export const LogosContainer = styled.div`
 `
 
 export const LogosWrapper = styled.div`
+  box-sizing: content-box;
   position: relative;
 
   display: flex;
@@ -54,16 +55,22 @@ export const LogosWrapper = styled.div`
   min-width: 10.5rem;
   min-height: 7.5rem;
   
-  padding: 5px 8px;
+  padding: 0.3125rem 0.5rem;
   color: ${props => props.theme.pink500};
   
   border-radius: 8px;
 
   background-color: ${props => props.theme.gray50};
 
-  img {
-    
+  filter: brightness(95%);
 
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(100%);
+  }
+
+  img {
     object-fit: cover;
   }
 

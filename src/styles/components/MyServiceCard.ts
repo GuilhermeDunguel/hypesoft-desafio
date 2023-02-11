@@ -13,7 +13,7 @@ export const MyServiceCardContainer = styled.div`
   color: ${props => props.theme.gray800};
   border-radius: 10px;
   background-color: ${props => props.theme.gray50};
-  filter: brightness(90%);
+  filter: brightness(95%);
 
   transition: filter 0.2s;
   &:hover{
@@ -78,7 +78,7 @@ export const MyServiceCardFooter = styled.footer`
     span {
       display: none;
       color: ${props => props.theme.pink500};
-      margin-left: -120px;
+      margin-left: -7.5rem;
       font-size: 1rem;
       font-weight: 600;
     }

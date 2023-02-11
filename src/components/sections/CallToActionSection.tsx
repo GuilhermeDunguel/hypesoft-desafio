@@ -12,7 +12,7 @@ export function CallToActionSection() {
       </p>
       <DefaultButton
         label={'Hire me'}
-        icon={<HiOutlineArrowNarrowRight size={36} />}
+        icon={<HiOutlineArrowNarrowRight size={30} />}
       />
     </CallToActionSectionContainer>
   )

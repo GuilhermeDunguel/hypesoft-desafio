@@ -4,7 +4,7 @@ import {
   LogosWrapper,
 } from '@/styles/sections/CompaniesIveWorked'
 import React from 'react'
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
+import { BsArrowRight } from 'react-icons/bs'
 
 import Image from 'next/image'
 
@@ -12,7 +12,7 @@ export function CompaniesIveWorked() {
   return (
     <CompaniesIveWorkedContainer>
       <p>
-        I workd with <span>3+</span> Companies all over the World.
+        I worked with <span>3+</span> Companies all over the World.
       </p>
       <LogosContainer>
         <LogosWrapper>
@@ -43,7 +43,7 @@ export function CompaniesIveWorked() {
           />
         </LogosWrapper>
         <LogosWrapper>
-          <HiOutlineArrowNarrowRight size={40} />
+          <BsArrowRight size={32} />
           <a href="https://guilhermedunguel.com/projects" about="blank" />
         </LogosWrapper>
       </LogosContainer>

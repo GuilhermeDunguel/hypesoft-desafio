@@ -5,7 +5,7 @@ import {
 } from '@/styles/components/MyServiceCard'
 import React, { ReactNode } from 'react'
 
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
+import { BsArrowRight } from 'react-icons/bs'
 
 interface MyServiceCardProps {
   icon: ReactNode
@@ -20,7 +20,7 @@ export function MyServiceCard({ icon, label }: MyServiceCardProps) {
         <p>{label}</p>
         <button>
           <span>DISCUSS NOW</span>
-          <HiOutlineArrowNarrowRight size={36} />
+          <BsArrowRight size={30} />
         </button>
         <DiscussNowLink href="#contacts" />
       </MyServiceCardFooter>

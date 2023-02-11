@@ -10,7 +10,7 @@ export const Button = styled.button<ButtonProps>`
   display: flex;
   align-items: center;
 
-  gap: 8px;
+  gap: 0.5rem;
   
   padding: 0 2rem;
 

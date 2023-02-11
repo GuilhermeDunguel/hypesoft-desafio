@@ -16,7 +16,7 @@ export const Header = styled.header`
       color: ${props => props.theme.gray50};
       font-size: 0.875rem;
       font-weight: 700;
-      line-height: 40px;
+      line-height: 2.5rem;
       text-decoration: none;
 
       transition: filter 0.2s;
@@ -35,7 +35,7 @@ export const Footer = styled.footer`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
 
   max-width: 82.5rem;
   margin: 13.75rem auto 10rem;

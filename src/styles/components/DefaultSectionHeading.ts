@@ -8,7 +8,7 @@ export const DefaultSectionHeadingWrapper = styled.h2`
 
   &::after {
     position: absolute;
-    bottom: -16px;
+    bottom: -1rem;
     left: calc(50% - (5rem / 2));
 
     content: '';

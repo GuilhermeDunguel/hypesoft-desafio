@@ -40,7 +40,7 @@ export function AboutSection() {
 
         <DefaultButton
           label={'Say hi'}
-          icon={<HiOutlineArrowNarrowRight size={36} />}
+          icon={<HiOutlineArrowNarrowRight size={30} />}
         />
       </AboutTextsWrapper>
     </AboutSectionContainer>

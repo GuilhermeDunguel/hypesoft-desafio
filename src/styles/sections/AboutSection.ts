@@ -44,7 +44,7 @@ export const AboutTextsWrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
 
-  gap: 32px;
+  gap: 2rem;
   
 
   h2 {
@@ -80,7 +80,7 @@ export const AboutExperienceAndProjectsWrapper = styled.div`
       color: ${props => props.theme.gray50};
       font-size: 1.125rem;
       line-height: 1.75rem;
-      max-width: 96px;
+      max-width: 6rem;
     }
 
     span {

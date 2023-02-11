@@ -7,7 +7,7 @@ import {
 import React from 'react'
 
 import Image from 'next/image'
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
+import { BsArrowRight } from 'react-icons/bs'
 
 interface MySelectedWorkProps {
   imageUrl: string
@@ -29,7 +29,7 @@ export function MySelectedWorkCard({
         <p>{label}</p>
         <ViewProjectButtonWrapper>
           <span>VIEW PROJECT</span>
-          <HiOutlineArrowNarrowRight size={36} />
+          <BsArrowRight size={30} />
         </ViewProjectButtonWrapper>
       </MySelectedWorkCardFooter>
       <a href={projectUrl} target="blank" />
