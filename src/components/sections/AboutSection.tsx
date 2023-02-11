@@ -12,7 +12,7 @@ import DefaultButton from '../DefaultButton'
 
 export function AboutSection() {
   return (
-    <AboutSectionContainer>
+    <AboutSectionContainer id="#about">
       <AboutImageWrapper>
         <Image src={'https://i.imgur.com/FOFaDyr.jpg'} alt={''} fill />
       </AboutImageWrapper>

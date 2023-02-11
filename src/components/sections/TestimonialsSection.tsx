@@ -2,7 +2,8 @@ import {
   TestimonialSelector,
   TestimonialsSectionContainer,
   TestimonialsWrapper,
-  TestimonialTextWrapper,
+  TestimonialTextSide,
+  TestimonialWrapper,
 } from '@/styles/sections/TestimonialsSection'
 import React, { useState } from 'react'
 import { DefaultSectionHeading } from '../DefaultSectionHeading'
@@ -98,21 +99,21 @@ export function TestimonialsSection() {
             )
           })}
         </TestimonialSelector>
-        <TestimonialTextWrapper>
+        <TestimonialTextSide>
           {testimonialsArray
             .filter((witness) => witness.witness.name === selectedWitness)
             .map((witness) => {
               return (
-                <>
-                  <div key={witness.witness.name}>
+                <TestimonialWrapper key={witness.witness.name}>
+                  <div>
                     <AiFillStar />
                     <h3>{witness.testimonial.stars} Star Rating</h3>
                   </div>
                   <p>“{witness.testimonial.text}”</p>
-                </>
+                </TestimonialWrapper>
               )
             })}
-        </TestimonialTextWrapper>
+        </TestimonialTextSide>
       </TestimonialsWrapper>
     </TestimonialsSectionContainer>
   )

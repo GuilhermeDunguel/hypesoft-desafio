@@ -5,6 +5,10 @@ export const AboutSectionContainer = styled.section`
   align-items: center;
   
   gap: 5.5rem;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 `
 
 export const AboutImageWrapper = styled.div`
@@ -32,6 +36,14 @@ export const AboutImageWrapper = styled.div`
     border-radius: 10px;
     background-color: ${props => props.theme.gray50};
   }
+
+  @media (max-width: 1200px) {
+    width: 100%;
+
+    &::after {
+      display: none;
+    }
+  }
 `
 
 export const AboutTextsWrapper = styled.div`
@@ -41,6 +53,7 @@ export const AboutTextsWrapper = styled.div`
   align-items: flex-start;
 
   gap: 2rem;
+  
   
 
   h2 {
@@ -57,6 +70,10 @@ export const AboutTextsWrapper = styled.div`
     font-weight: 400;
     line-height: 1.75rem;
     max-width: 41.25rem;
+  }
+
+  @media (max-width: 1200px) {
+    width: 100%;
   }
 `
 

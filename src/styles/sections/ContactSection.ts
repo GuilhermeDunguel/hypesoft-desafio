@@ -9,6 +9,15 @@ export const ContactSectionContainer = styled.section`
 
   height: 33.5rem;
 
+  @media (max-width: 1200px) {
+    height: 100%;
+    flex-direction: column;
+
+    .ContactFormContainer, .ContactInfosContainer {
+      width: 100%;
+    }
+  }
+
   .ContactFormContainer, .ContactInfosContainer {
     padding: 3rem;
     height: 100%;
@@ -84,6 +93,13 @@ export const ContactInfosContainer = styled.div`
     height: 4.25rem;
 
     overflow: hidden;
+  }
+
+  @media (max-width: 1200px) {
+    &::after {
+      top: -1rem;
+      right: -1.5rem;
+    }
   }
 `
 

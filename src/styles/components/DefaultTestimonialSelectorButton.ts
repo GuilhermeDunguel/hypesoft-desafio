@@ -32,6 +32,15 @@ export const TestimonialSelectorButtonWrapper = styled.div<TestimonialSelectorBu
     border-color: ${props => props.active ? `transparent ${props.theme.gray50} transparent transparent` : 'transparent'};
   }
 
+  @media (max-width: 1200px) {
+    &::after {
+      left: 50%;
+      bottom: -2.12rem;
+
+      transform: rotate(90deg);
+    }
+  }
+
   img {
     width: 3.25rem;
     height: 3.25rem;

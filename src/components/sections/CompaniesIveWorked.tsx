@@ -44,7 +44,7 @@ export function CompaniesIveWorked() {
         </LogosWrapper>
         <LogosWrapper>
           <BsArrowRight size={32} />
-          <a href="https://guilhermedunguel.com/projects" about="blank" />
+          <a href="https://guilhermedunguel.com/" about="blank" />
         </LogosWrapper>
       </LogosContainer>
     </CompaniesIveWorkedContainer>

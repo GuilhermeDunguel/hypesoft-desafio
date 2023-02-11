@@ -19,6 +19,11 @@ export const CallToActionSectionContainer = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media (max-width: 1200px) {
+    width: 100%;
+    background-image: url('/BannerMobile.svg');
+  }
+
   p {
     max-width: 32rem;
 

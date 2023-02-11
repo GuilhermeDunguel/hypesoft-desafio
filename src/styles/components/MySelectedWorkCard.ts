@@ -33,11 +33,17 @@ export const MySelectedWorkCardImageWrapper = styled.div`
   position: relative;
   width: 26.5rem;
   height: 20.75rem;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
   
   img {
     border-radius: 8px 8px 0 0;
     object-fit: cover;
     position: absolute; 
+
+    
   }
 `
 

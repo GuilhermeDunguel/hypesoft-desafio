@@ -5,6 +5,13 @@ export const CompaniesIveWorkedContainer = styled.section`
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: 1200px) {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
   p {
     color: ${props => props.theme.gray50};
     font-size: 2rem;
@@ -38,7 +45,14 @@ export const CompaniesIveWorkedContainer = styled.section`
 
 export const LogosContainer = styled.div`
   display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
   gap: 1.5rem;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 `
 
 export const LogosWrapper = styled.div`
@@ -49,10 +63,10 @@ export const LogosWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  min-width: 10.5rem;
-  min-height: 7.5rem;
+  width: 10.5rem;
+  height: 7.5rem;
   
-  padding: 0.3125rem 0.5rem;
+  padding: 0.5rem 0.625rem;
   color: ${props => props.theme.pink500};
   
   border-radius: 8px;
@@ -74,5 +88,10 @@ export const LogosWrapper = styled.div`
   a {
     position: absolute;
     inset: 0;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    height: 10rem;
   }
 `

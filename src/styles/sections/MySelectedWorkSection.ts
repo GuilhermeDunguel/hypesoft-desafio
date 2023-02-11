@@ -14,4 +14,9 @@ export const MySelectedWorkCardsWrapper = styled.div`
   justify-content: center;
   height: 100%;
   gap: 24px;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `

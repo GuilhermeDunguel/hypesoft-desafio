@@ -13,11 +13,10 @@ import { FiMapPin, FiPhone } from 'react-icons/fi'
 import { GoMail } from 'react-icons/go'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { RiGlobalLine } from 'react-icons/ri'
-import { useForm } from 'react-hook-form'
 
 export function ContactSection() {
   return (
-    <ContactSectionContainer>
+    <ContactSectionContainer id="#contact">
       <ContactFormContainer
         className="ContactFormContainer"
         action="https://formsubmit.co/guilhermedunguel@gmail.com"

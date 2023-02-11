@@ -23,7 +23,7 @@ export function PresentationSection() {
             <span>Front-End Developer.</span>
           </h1>
           <p>
-            UI/UX Desinger, Front-End and Mobile Developer based in Brazil. 1
+            UI/UX Designer, Front-End and Mobile Developer based in Brazil. 1
             year of freelancing experience, as an designer and Front-End
             Developer, I&apos;ve worked with up-and-coming startups.
           </p>

@@ -11,7 +11,7 @@ import { DefaultSectionHeading } from '../DefaultSectionHeading'
 
 export function MyServiceSection() {
   return (
-    <MyServiceSectionContainer>
+    <MyServiceSectionContainer id="#services">
       <DefaultSectionHeading label={'My Service'} />
       <MyServiceCardsWrapper>
         <MyServiceCard icon={<FiLayers size={40} />} label="UI/UX Design" />

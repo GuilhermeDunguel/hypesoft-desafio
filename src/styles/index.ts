@@ -5,12 +5,13 @@ export const Header = styled.header`
   justify-content: right;
 
   nav {
-    background-color: ${props => props.theme.purple500};
     width: 40%;
     display: flex;
     gap: 1.75rem;
 
     padding: 1.75rem 2.9375rem;
+
+    background-color: ${props => props.theme.purple500};
   
     a {
       color: ${props => props.theme.gray50};
@@ -26,6 +27,14 @@ export const Header = styled.header`
       }
     }
   }
+
+  @media (max-width: 1200px) {
+    nav {
+      width: 100%;
+    }
+  }
+
+  
 `
 
 export const MainSectionsWrapper = styled.section`
@@ -33,8 +42,15 @@ export const MainSectionsWrapper = styled.section`
   flex-direction: column;
   gap: 13.75rem;
 
+  height: 100%;
   max-width: 83.5rem;
+
   margin: 8.25rem auto 0;
+
+  @media (max-width: 1200px) {
+    margin: 32rem auto 0;
+    padding: 0 1.25rem;
+  }
 `
 
 export const Footer = styled.footer`

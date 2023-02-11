@@ -20,11 +20,15 @@ export const GlobalStyle = createGlobalStyle`
     @media (max-width: 1300px) {
       font-size: 75%;
     }
+
+    @media (max-width: 1300px) {
+    }
   }
 
   /* width */
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 0.625rem;
+    overflow: hidden;
   }
 
   ::-webkit-scrollbar-track {

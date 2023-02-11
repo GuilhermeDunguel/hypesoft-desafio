@@ -18,4 +18,9 @@ export const MyServiceCardsWrapper = styled.section`
   justify-content: center;
   gap: 24px;
   width: 100%;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `
