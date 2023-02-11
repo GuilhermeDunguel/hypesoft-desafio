@@ -5,10 +5,6 @@ export const MyServiceSectionContainer = styled.section`
   align-items: center;
 
   flex-direction: column;
-  
-  max-width: 82.5rem;
-
-  margin: 13.75rem auto 0;
 
   display: flex;
   align-items: center; 

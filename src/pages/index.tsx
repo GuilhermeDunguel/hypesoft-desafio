@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import { Footer, Header, Main } from '../styles/index'
+import { Footer, Header, MainSectionsWrapper } from '../styles/index'
 import { PresentationSection } from '@/components/sections/PresentationSection'
 import { AboutSection } from '@/components/sections/AboutSection'
 import { MyServiceSection } from '@/components/sections/MyServiceSection'
@@ -10,6 +10,7 @@ import { CallToActionSection } from '@/components/sections/CallToActionSection'
 import { ContactSection } from '@/components/sections/ContactSection'
 
 import Image from 'next/image'
+import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +23,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.jpeg" />
       </Head>
-      <Main className={inter.className}>
+      <main className={inter.className}>
         <Header>
           <nav>
             <a href="#about">ABOUT</a>
@@ -32,12 +33,15 @@ export default function Home() {
           </nav>
         </Header>
         <PresentationSection />
-        <AboutSection />
-        <MyServiceSection />
-        <MySelectedWorkSection />
-        <CompaniesIveWorked />
-        <CallToActionSection />
-        <ContactSection />
+        <MainSectionsWrapper>
+          <AboutSection />
+          <MyServiceSection />
+          <MySelectedWorkSection />
+          <CompaniesIveWorked />
+          <CallToActionSection />
+          <TestimonialsSection />
+          <ContactSection />
+        </MainSectionsWrapper>
         <Footer>
           <Image src={'/HypesoftLogo.svg'} alt={''} width={253} height={59} />
           <span>
@@ -45,7 +49,7 @@ export default function Home() {
             and <strong>Hypesoft</strong>
           </span>
         </Footer>
-      </Main>
+      </main>
     </>
   )
 }

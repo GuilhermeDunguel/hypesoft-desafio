@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 
 export const MySelectedWorkContainer = styled.section`
-  
-  max-width: 1320px;
-
-  margin: 13.75rem auto 0;
-
   display: flex;
   align-items: center; 
   justify-content: center;

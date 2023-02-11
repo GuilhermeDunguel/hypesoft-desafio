@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 export const CompaniesIveWorkedContainer = styled.section`
-  max-width: 82.5rem;
-  margin: 13.75rem auto 0;
-
   display: flex;
   align-items: center;
   justify-content: space-between;

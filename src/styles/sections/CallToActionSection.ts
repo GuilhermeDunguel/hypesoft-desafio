@@ -9,9 +9,6 @@ export const CallToActionSectionContainer = styled.section`
 
   position: relative;
 
-  margin: 13.75rem auto 0;
-
-  max-width: 82.5rem;
   max-height: 19.5rem;
 
   width: 82.5rem;

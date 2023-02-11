@@ -76,6 +76,7 @@ export const PresentationTextAnButtons = styled.div`
 
   }
   div {
+    
     display: flex;
     gap: 1rem;
   }

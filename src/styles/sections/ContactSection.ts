@@ -7,8 +7,6 @@ export const ContactSectionContainer = styled.section`
   align-items: center;
   gap: 1.5rem;
 
-  margin: 8.25rem auto 0;
-  max-width: 82.5rem;
   height: 33.5rem;
 
   .ContactFormContainer, .ContactInfosContainer {

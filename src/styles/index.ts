@@ -28,7 +28,14 @@ export const Header = styled.header`
   }
 `
 
-export const Main = styled.main``
+export const MainSectionsWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 13.75rem;
+
+  max-width: 83.5rem;
+  margin: 8.25rem auto 0;
+`
 
 export const Footer = styled.footer`
   display: flex;
