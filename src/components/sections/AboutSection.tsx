@@ -14,7 +14,13 @@ export function AboutSection() {
   return (
     <AboutSectionContainer id="about">
       <AboutImageWrapper>
-        <Image src={'https://i.imgur.com/FOFaDyr.jpg'} alt={''} fill />
+        <Image
+          src={'https://i.imgur.com/FOFaDyr.jpg'}
+          alt={
+            'Uma imagem do computador de Guilherme, podendo ser visto um monitor com um projeto web sendo construído, ao lado esquerdo um microfone iluminado em vermelho e logo abaixo um teclado retro-iluminado com as cores RGB.'
+          }
+          fill
+        />
       </AboutImageWrapper>
       <AboutTextsWrapper>
         <h2>

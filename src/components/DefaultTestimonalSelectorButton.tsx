@@ -25,7 +25,12 @@ export function DefaultTestimonalSelectorButton({
 }: DefaultTestimonalSelectorButtonProps) {
   return (
     <TestimonialSelectorButtonWrapper active={witnessName === witnessSelected}>
-      <Image src={witnessProfileImageUrl} alt={''} width={52} height={52} />
+      <Image
+        src={witnessProfileImageUrl}
+        alt={'Imagem de uma das testemunhas do trabalho de Guilherme.'}
+        width={52}
+        height={52}
+      />
       <div>
         <h3>{witnessName}</h3>
         <p>

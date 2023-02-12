@@ -23,7 +23,12 @@ export function MySelectedWorkCard({
   return (
     <MySelectedWorkCardContainer>
       <MySelectedWorkCardImageWrapper>
-        <Image src={imageUrl} alt={''} fill quality={100} />
+        <Image
+          src={imageUrl}
+          alt={'Imagem de um dos projetos de Guilherme.'}
+          fill
+          quality={100}
+        />
       </MySelectedWorkCardImageWrapper>
       <MySelectedWorkCardFooter>
         <p>{label}</p>
