@@ -5,7 +5,6 @@ const nextConfig = {
 
 module.exports = nextConfig
 
-
 module.exports = {
   images: {
     domains: ['i.imgur.com', 'www.guilhermedunguel.com']

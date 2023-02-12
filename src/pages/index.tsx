@@ -43,7 +43,13 @@ export default function Home() {
           <ContactSection />
         </MainSectionsWrapper>
         <Footer>
-          <Image src={'/HypesoftLogo.svg'} alt={''} width={253} height={59} />
+          <Image
+            title="HypesoftLogo-Footer"
+            src={'/HypesoftLogo.svg'}
+            alt={''}
+            width={253}
+            height={59}
+          />
           <span>
             Made with <strong className="CreditsHeart">♥</strong> by Guilherme
             and <strong>Hypesoft</strong>

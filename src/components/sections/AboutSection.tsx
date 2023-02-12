@@ -12,7 +12,7 @@ import DefaultButton from '../DefaultButton'
 
 export function AboutSection() {
   return (
-    <AboutSectionContainer id="#about">
+    <AboutSectionContainer id="about">
       <AboutImageWrapper>
         <Image src={'https://i.imgur.com/FOFaDyr.jpg'} alt={''} fill />
       </AboutImageWrapper>
@@ -41,6 +41,7 @@ export function AboutSection() {
         <DefaultButton
           label={'Say hi'}
           icon={<HiOutlineArrowNarrowRight size={30} />}
+          link={'#contact'}
         />
       </AboutTextsWrapper>
     </AboutSectionContainer>

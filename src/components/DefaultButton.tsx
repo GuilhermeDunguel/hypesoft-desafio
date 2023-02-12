@@ -15,10 +15,10 @@ export default function DefaultButton({
   link,
 }: DefaultButtonProps) {
   return (
-    <Button secondary={secondary} type="submit">
+    <Button secondary={secondary} type="submit" aria-label="defaultButton">
       <span>{label.toUpperCase()}</span>
       {icon}
-      {link ? <a href={link} target="blank" /> : null}
+      {link ? <a href={link} /> : null}
     </Button>
   )
 }

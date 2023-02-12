@@ -39,7 +39,7 @@ export function TestimonialsSection() {
       },
       testimonial: {
         stars: 5.0,
-        text: `If you're looking for someone who will challenge your UX/UI thinking and really cut to the core of what's important for users, then Jesse is your man. On top of that, he brings a level ofenthusiasm to the craft that's energizing for everyone who works with him.`,
+        text: `Programador dedicado e aprende rápido! Possui ótimo conhecimento em Design e Front End`,
       },
     },
     {
@@ -50,7 +50,7 @@ export function TestimonialsSection() {
         company: 'My Heart',
       },
       testimonial: {
-        stars: 4.9,
+        stars: 5,
         text: 'Meow.',
       },
     },
@@ -63,7 +63,7 @@ export function TestimonialsSection() {
       },
       testimonial: {
         stars: 4.9,
-        text: 'If you&apos;re looking for someone who will challenge your UX/UI thinking and really cut to the core of what&apos;s important for users, then Jesse is your man. On top of that, he brings a level ofenthusiasm to the craft that&apos;s energizing for everyone who works with him.',
+        text: `If you're looking for someone who will challenge your UX/UI thinking and really cut to the core of what's important for users, then Jesse is your man. On top of that, he brings a level ofenthusiasm to the craft that's energizing for everyone who works with him.`,
       },
     },
     {
@@ -75,7 +75,7 @@ export function TestimonialsSection() {
       },
       testimonial: {
         stars: 4.8,
-        text: 'If you&apos;re looking for someone who will challenge your UX/UI thinking and really cut to the core of what&apos;s important for users, then Jesse is your man. On top of that, he brings a level ofenthusiasm to the craft that&apos;s energizing for everyone who works with him.',
+        text: `If you're looking for someone who will challenge your UX/UI thinking and really cut to the core of what's important for users, then Jesse is your man. On top of that, he brings a level ofenthusiasm to the craft that's energizing for everyone who works with him.`,
       },
     },
   ]

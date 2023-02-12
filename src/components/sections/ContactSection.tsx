@@ -16,7 +16,7 @@ import { RiGlobalLine } from 'react-icons/ri'
 
 export function ContactSection() {
   return (
-    <ContactSectionContainer id="#contact">
+    <ContactSectionContainer id="contact">
       <ContactFormContainer
         className="ContactFormContainer"
         action="https://formsubmit.co/guilhermedunguel@gmail.com"
