@@ -4,7 +4,7 @@ import {
   TestimonialsWrapper,
   TestimonialTextSide,
   TestimonialWrapper,
-} from '@/styles/sections/TestimonialsSection'
+} from '@/styles/components/sections/TestimonialsSection'
 import React, { useState } from 'react'
 import { DefaultSectionHeading } from '../DefaultSectionHeading'
 

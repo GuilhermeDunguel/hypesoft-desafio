@@ -8,7 +8,7 @@ import {
   PresentationRightSide,
   PresentationSectionWrapper,
   PresentationTextAnButtons,
-} from '../../styles/sections/PresentationSection'
+} from '../../styles/components/sections/PresentationSection'
 import DefaultButton from '../DefaultButton'
 
 import Image from 'next/image'
@@ -28,27 +28,26 @@ export function PresentationSection() {
             Developer, I&apos;ve worked with up-and-coming startups.
           </p>
           <div>
-            <DefaultButton label={'Hire me'} />
-            <DefaultButton
-              secondary
-              label={'View work'}
-              link={'https://guilhermedunguel.com'}
-            />
+            <DefaultButton label={'Hire me'} link={'#contact'} />
+            <DefaultButton secondary label={'View work'} link={'#works'} />
           </div>
         </PresentationTextAnButtons>
         <FollowMeOnDiv>
           <span>Follow me on</span>
           <div>
-            <a href="https://www.linkedin.com/in/guilhermedunguel/">
+            <a
+              href="https://www.linkedin.com/in/guilhermedunguel/"
+              target="blank"
+            >
               <FaLinkedinIn size={20} />
             </a>
-            <a href="https://github.com/GuilhermeDunguel">
+            <a href="https://github.com/GuilhermeDunguel" target="blank">
               <FaGithub size={20} />
             </a>
-            <a href="mailto:guilhermedunguel@gmail.com">
+            <a href="mailto:guilhermedunguel@gmail.com" target="blank">
               <GoMail size={20} />
             </a>
-            <a href="https://www.guilhermedunguel.com/">
+            <a href="https://www.guilhermedunguel.com/" target="blank">
               <RiGlobalLine size={20} />
             </a>
           </div>
@@ -57,7 +56,7 @@ export function PresentationSection() {
       <PresentationRightSide>
         <Image
           src="https://i.imgur.com/F3PvsyW.jpg"
-          alt=""
+          alt="Uma foto de Guilherme, cor de pele branca, usando óculos rendondos de cor preta, barba por fazer, camiseta preta, sentado em uma cadeira preta com seu quarto ao fundo. o fundo é iluminado por uma luz roxa vindo da esquerda e uma luz amarela vindo da direita."
           width={870}
           height={970}
           quality={100}

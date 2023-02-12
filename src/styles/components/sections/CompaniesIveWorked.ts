@@ -63,10 +63,10 @@ export const LogosWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  width: 10.5rem;
-  height: 7.5rem;
+  min-width: 10.5rem;
+  min-height: 7.5rem;
   
-  padding: 0.5rem 0.625rem;
+  padding: 0.5rem 1.25rem;
   color: ${props => props.theme.pink500};
   
   border-radius: 8px;

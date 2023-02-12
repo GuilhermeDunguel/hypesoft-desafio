@@ -4,7 +4,7 @@ import {
   ContactInfoWrapper,
   ContactSectionContainer,
   SocialButtonsWrapper,
-} from '@/styles/sections/ContactSection'
+} from '@/styles/components/sections/ContactSection'
 import React from 'react'
 import DefaultButton from '../DefaultButton'
 

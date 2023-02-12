@@ -1,7 +1,7 @@
 import {
   MySelectedWorkCardsWrapper,
   MySelectedWorkContainer,
-} from '@/styles/sections/MySelectedWorkSection'
+} from '@/styles/components/sections/MySelectedWorkSection'
 import React from 'react'
 import { DefaultSectionHeading } from '../DefaultSectionHeading'
 import { MySelectedWorkCard } from '../MySelectedWorkCard'

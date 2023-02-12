@@ -3,7 +3,7 @@ import {
   AboutImageWrapper,
   AboutSectionContainer,
   AboutTextsWrapper,
-} from '@/styles/sections/AboutSection'
+} from '@/styles/components/sections/AboutSection'
 
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import React from 'react'

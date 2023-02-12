@@ -1,6 +1,6 @@
 import React from 'react'
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
-import { CallToActionSectionContainer } from '../../styles/sections/CallToActionSection'
+import { CallToActionSectionContainer } from '../../styles/components/sections/CallToActionSection'
 import DefaultButton from '../DefaultButton'
 
 export function CallToActionSection() {
@@ -13,6 +13,7 @@ export function CallToActionSection() {
       <DefaultButton
         label={'Hire me'}
         icon={<HiOutlineArrowNarrowRight size={30} />}
+        link={'#contact'}
       />
     </CallToActionSectionContainer>
   )

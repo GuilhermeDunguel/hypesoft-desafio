@@ -22,7 +22,7 @@ export function MyServiceCard({ icon, label }: MyServiceCardProps) {
           <span>DISCUSS NOW</span>
           <BsArrowRight size={30} />
         </button>
-        <DiscussNowLink href="#contacts" />
+        <DiscussNowLink href="#contact" />
       </MyServiceCardFooter>
     </MyServiceCardContainer>
   )
