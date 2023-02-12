@@ -24,7 +24,7 @@ export const Button = styled.button<ButtonProps>`
   
   background-color: ${props => !props.secondary ? props.theme.purple500 : props.theme.gray50};
   
-  transition: filter 0.2s;
+  transition: 0.2s;
   cursor: pointer;
 
   a {
@@ -33,6 +33,7 @@ export const Button = styled.button<ButtonProps>`
   }
 
   &:hover {
+    gap: 0.8rem;
     filter: brightness(90%);
   }
 `

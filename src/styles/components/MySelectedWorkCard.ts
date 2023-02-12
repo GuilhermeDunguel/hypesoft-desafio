@@ -4,13 +4,23 @@ export const MySelectedWorkCardContainer = styled.div`
   
   color: ${props => props.theme.gray800};
   
-  transition: filter 0.2s;
-  
   filter: brightness(95%);
 
   a {
     position: absolute;
     inset: 0;
+  }
+
+  transition: 0.2s;
+
+  svg {
+    transition: 0.2s;
+  }
+
+  button {
+    span {
+      transition: 0.2s;
+    }
   }
 
   &:hover{
@@ -22,8 +32,8 @@ export const MySelectedWorkCardContainer = styled.div`
 
     button {
       span {
-        display: block;
         margin-left: 0;
+        opacity: 100%;
       }
     }
   }
@@ -42,8 +52,6 @@ export const MySelectedWorkCardImageWrapper = styled.div`
     border-radius: 8px 8px 0 0;
     object-fit: cover;
     position: absolute; 
-
-    
   }
 `
 
@@ -52,9 +60,12 @@ export const MySelectedWorkCardFooter = styled.footer`
   flex-direction: column;
   gap: 1.25rem;
   
+  overflow: hidden;
+  
   border-radius: 0 0 8px 8px;
   background-color: ${props => props.theme.gray50};
   padding: 1.5rem;
+
 
   p {
     color: ${props => props.theme.gray800};
@@ -73,13 +84,11 @@ export const ViewProjectButtonWrapper = styled.button`
 
   background: none;
   border: none;
-  
-  overflow: hidden;
 
   span {
-    display: none;
+    opacity: 0;
     color: ${props => props.theme.pink500};
-    margin-left: -7.5rem;
+    margin-left: -8rem;
     font-size: 1rem;
     font-weight: 600;
   }

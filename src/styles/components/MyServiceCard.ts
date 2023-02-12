@@ -15,7 +15,20 @@ export const MyServiceCardContainer = styled.div`
   background-color: ${props => props.theme.gray50};
   filter: brightness(95%);
 
-  transition: filter 0.2s;
+  transition: 0.2s;
+
+  svg {
+    transition: 0.2s;
+  }
+
+  button {
+    span {
+      opacity: 0%;
+      display: block;
+      transition: 0.2s;
+    }
+  }
+
   &:hover{
     filter: brightness(100%);
 
@@ -25,7 +38,8 @@ export const MyServiceCardContainer = styled.div`
 
     button {
       span {
-        display: block;
+        opacity: 100%;
+        color: ${props => props.theme.pink500};
         margin-left: 0;
       }
     }
@@ -35,6 +49,8 @@ export const MyServiceCardContainer = styled.div`
 export const MyServiceCardFooter = styled.footer`
   min-width: 15rem;
   max-width: 15rem;
+
+  overflow: hidden;
 
   p {
 
@@ -73,11 +89,8 @@ export const MyServiceCardFooter = styled.footer`
     background: none;
     border: none;
     
-    overflow: hidden;
-
     span {
-      display: none;
-      color: ${props => props.theme.pink500};
+      color: ${props => props.theme.gray800};
       margin-left: -7.5rem;
       font-size: 1rem;
       font-weight: 600;
