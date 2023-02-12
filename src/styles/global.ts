@@ -29,7 +29,6 @@ export const GlobalStyle = createGlobalStyle`
   /* width */
   ::-webkit-scrollbar {
     width: 0.625rem;
-    overflow: hidden;
   }
 
   ::-webkit-scrollbar-track {

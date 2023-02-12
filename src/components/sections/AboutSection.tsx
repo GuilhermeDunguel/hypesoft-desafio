@@ -20,6 +20,9 @@ export function AboutSection() {
             'Uma imagem do computador de Guilherme, podendo ser visto um monitor com um projeto web sendo construído, ao lado esquerdo um microfone iluminado em vermelho e logo abaixo um teclado retro-iluminado com as cores RGB.'
           }
           fill
+          sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
         />
       </AboutImageWrapper>
       <AboutTextsWrapper>

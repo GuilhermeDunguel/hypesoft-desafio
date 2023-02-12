@@ -1,5 +1,4 @@
-import { PresentationLeftSide } from './PresentationSection';
-import { AboutExperienceAndProjectsWrapper } from './AboutSection';
+
 import styled from 'styled-components';
 
 export const ContactSectionContainer = styled.section`
@@ -98,7 +97,7 @@ export const ContactInfosContainer = styled.div`
   @media (max-width: 1200px) {
     &::after {
       top: -1rem;
-      right: -1.5rem;
+      right: -1rem;
     }
   }
 `
