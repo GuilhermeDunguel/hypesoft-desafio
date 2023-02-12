@@ -12,32 +12,32 @@ export function MySelectedWorkSection() {
       <DefaultSectionHeading label={'My Selected Work'} />
       <MySelectedWorkCardsWrapper>
         <MySelectedWorkCard
-          imageUrl={'/projects-images/coffee-delivery.svg'}
+          imageUrl={'https://i.imgur.com/hLG0SEy.jpg'}
           label={'Coffee Delivery'}
           projectUrl={'https://coffee-delivery-teal.vercel.app/'}
         />
         <MySelectedWorkCard
-          imageUrl={'/projects-images/my-portfolio.svg'}
+          imageUrl={'https://i.imgur.com/B7ylowo.jpg'}
           label={'My Portfolio'}
-          projectUrl={'https://guilhermedunguel.com/'}
+          projectUrl={'https://www.guilhermedunguel.com/'}
         />
         <MySelectedWorkCard
-          imageUrl={'/projects-images/ignite-feed.svg'}
+          imageUrl={'https://i.imgur.com/xrh6x5o.jpg'}
           label={'Ignite Feed'}
           projectUrl={'https://ignite-feed-mocha.vercel.app/'}
         />
         <MySelectedWorkCard
-          imageUrl={'/projects-images/todo-list.svg'}
+          imageUrl={'https://i.imgur.com/NjOr8gT.jpg'}
           label={'To-do List'}
           projectUrl={'https://todolist-ignite-black.vercel.app/'}
         />
         <MySelectedWorkCard
-          imageUrl={'/projects-images/iceberg-endomarketing.svg'}
+          imageUrl={'https://i.imgur.com/6vEmtuf.jpg'}
           label={'Iceberg Endomarketing'}
           projectUrl={'https://iceberg-endomarketing-xx9s.vercel.app/'}
         />
         <MySelectedWorkCard
-          imageUrl={'/projects-images/boxed-water.svg'}
+          imageUrl={'https://i.imgur.com/fPSkxhW.jpg'}
           label={'Boxed Water - Landing Page'}
           projectUrl={'https://boxed-water.vercel.app/'}
         />

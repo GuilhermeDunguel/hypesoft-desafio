@@ -45,7 +45,7 @@ export default function Home() {
         <Footer>
           <Image
             title="HypesoftLogo-Footer"
-            src={'/HypesoftLogo.svg'}
+            src={'/HypesoftLogo.png'}
             alt={''}
             width={253}
             height={59}
