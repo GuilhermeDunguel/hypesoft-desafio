@@ -25,7 +25,7 @@ export const CallToActionSectionContainer = styled.section`
   }
 
   p {
-    max-width: 32rem;
+    max-width: 33rem;
 
     color: ${props => props.theme.gray50};
     font-size: 2rem;

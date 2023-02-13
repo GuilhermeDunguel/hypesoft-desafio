@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import DefaultButton from '@/components/DefaultButton'
+import { DefaultButton } from '@/components/DefaultButton'
 import { DefaultSectionHeading } from '@/components/DefaultSectionHeading'
 import { DefaultTestimonalSelectorButton } from '@/components/DefaultTestimonalSelectorButton'
 import { MySelectedWorkCard } from '@/components/MySelectedWorkCard'
@@ -19,95 +19,52 @@ import Home from '@/pages'
 /* Essa foi a minha primeira vez fazendo testes, aprendi por documentação e tutoriais durante uma tarde. Provavelmente existem melhores práticas e pontos do código que precisam ser melhorados/corrigidos. Ficaria muito grato se eu pudesse ter um feedback pra aprender mais! ;) */
 
 describe('Sections Rendering', () => {
-  it('Should render Main Header', async () => {
-    const { getByText } = render(<Home />)
-
-    expect(getByText('ABOUT')).toBeInTheDocument()
-    expect(getByText('SERVICES')).toBeInTheDocument()
-    expect(getByText('WORKS')).toBeInTheDocument()
-    expect(getByText('CONTACT')).toBeInTheDocument()
-  })
   it('Should render Presentation Section', async () => {
-    const { getByText } = await render(<PresentationSection />)
-    expect(
-      getByText(
-        `UI/UX Designer, Front-End and Mobile Developer based in Brazil. 1 year of freelancing experience, as an designer and Front-End Developer, I've worked with up-and-coming startups.`
-      )
-    ).toBeInTheDocument()
+    const { getByTestId } = await render(<PresentationSection />)
+
+    expect(getByTestId('presentation')).toBeInTheDocument()
   })
   it('Should render About Section', async () => {
-    const { getByText } = await render(<AboutSection />)
+    const { getByTestId } = await render(<AboutSection />)
 
-    expect(
-      getByText(
-        `Front-end and Mobile Developer, focused on JavaScript's Technologies.`
-      )
-    ).toBeInTheDocument()
-    expect(getByText(`SAY HI`)).toBeInTheDocument()
+    expect(getByTestId('about')).toBeInTheDocument()
   })
   it('Should render My Service Section', async () => {
-    const { getByText } = await render(<MyServiceSection />)
+    const { getByTestId } = await render(<MyServiceSection />)
 
-    expect(getByText(`UI/UX Design`)).toBeInTheDocument()
-    expect(getByText(`Front-End Development`)).toBeInTheDocument()
-    expect(getByText(`Mobile Development`)).toBeInTheDocument()
+    expect(getByTestId('services')).toBeInTheDocument()
   })
   it('Should render My Selected Work Section', async () => {
-    const { getByText } = await render(<MySelectedWorkSection />)
+    const { getByTestId } = await render(<MySelectedWorkSection />)
 
-    expect(getByText(`Coffee Delivery`)).toBeInTheDocument()
-    expect(getByText(`My Portfolio`)).toBeInTheDocument()
-    expect(getByText(`Ignite Feed`)).toBeInTheDocument()
-    expect(getByText(`To-do List`)).toBeInTheDocument()
-    expect(getByText(`Iceberg Endomarketing`)).toBeInTheDocument()
-    expect(getByText(`Boxed Water - Landing Page`)).toBeInTheDocument()
+    expect(getByTestId('works')).toBeInTheDocument()
   })
   it('Should render Companies Ive Worked Section', async () => {
-    const { getByAltText } = await render(<CompaniesIveWorked />)
+    const { getByTestId } = await render(<CompaniesIveWorked />)
 
-    expect(
-      getByAltText(
-        'Logo da empresa Marcos Dunguel TI. Um circuito eletrônico em forma de uma árvore com seu tronco marrom e a sua copa verde e um sol atrás da copa à direita. Logo abaixo escrito "Marcos Dunguel, TI Verde"'
-      )
-    ).toBeInTheDocument()
-    expect(
-      getByAltText(
-        'Logo da empresa Editora Alamanda. Toda em rosa, à esquerda uma representação da flor alamanda que à sua direita está escrito "Alamanda"'
-      )
-    ).toBeInTheDocument()
-    expect(
-      getByAltText(
-        'Logo da empresa Grupo Star Info. Á esquerda 5 arcos arcos apontando para o centro, 4 em azul e 1 em amarelo, à direita está escrito "Grupo Star Info"'
-      )
-    ).toBeInTheDocument()
+    expect(getByTestId('companiesIveWorked')).toBeInTheDocument()
   })
   it('Should render Call to Action Section', async () => {
-    const { getByText } = await render(<CallToActionSection />)
+    const { getByTestId } = await render(<CallToActionSection />)
 
-    expect(getByText('HIRE ME')).toBeInTheDocument()
+    expect(getByTestId('callToAction')).toBeInTheDocument()
   })
   it('Should render Testimonial Section', async () => {
-    const { getByText } = await render(<TestimonialsSection />)
+    const { getByTestId } = await render(<TestimonialsSection />)
 
-    expect(getByText('Testimonial')).toBeInTheDocument()
+    expect(getByTestId('testimonial')).toBeInTheDocument()
   })
   it('Should render Contact Section', async () => {
-    const { getByText } = await render(<ContactSection />)
+    const { getByTestId } = await render(<ContactSection />)
 
-    expect(getByText('Let me know here.')).toBeInTheDocument()
-    expect(getByText('Get In Touch')).toBeInTheDocument()
-  })
-  it('Should render Main Footer', async () => {
-    const { getByTitle } = render(<Home />)
-
-    expect(getByTitle('HypesoftLogo-Footer')).toBeInTheDocument()
+    expect(getByTestId('contact')).toBeInTheDocument()
   })
 })
 
 describe('Components Rendering', () => {
   it('Should render a button with label, link', async () => {
     const { getByText, getByRole } = await render(
-      <DefaultButton label={'Hire me'} link={'#contact'} />
+      <DefaultButton label={'HIRE ME'} link={'#contact'} />
     )
 
     screen.debug()

@@ -5,7 +5,7 @@ import {
   ContactSectionContainer,
   SocialButtonsWrapper,
 } from '../../styles/components/sections/ContactSection'
-import React from 'react'
+import React, { useContext } from 'react'
 import { DefaultButton } from '../DefaultButton'
 
 import { IoPaperPlaneOutline } from 'react-icons/io5'
@@ -13,27 +13,52 @@ import { FiMapPin, FiPhone } from 'react-icons/fi'
 import { GoMail } from 'react-icons/go'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { RiGlobalLine } from 'react-icons/ri'
+import { TranslationContext } from '@/context/TranslationContext'
 
 export function ContactSection() {
+  const {
+    contactFormTitle,
+    contactInfoTitle,
+    contactFormNamePlaceholder,
+    contactFormEmailAdressPlaceholder,
+    contactFormSubjectsPlaceholder,
+    contactFormMessagePlaceholder,
+    sendMessage,
+  } = useContext(TranslationContext)
   return (
-    <ContactSectionContainer id="contact">
+    <ContactSectionContainer id="contact" data-testid="contact">
       <ContactFormContainer
         className="ContactFormContainer"
         action="https://formsubmit.co/guilhermedunguel@gmail.com"
         method="POST"
       >
-        <h3>Let me know here.</h3>
+        <h3>{contactFormTitle}</h3>
         <div>
-          <input name="name" type="text" placeholder="Full name" required />
+          <input
+            name="name"
+            type="text"
+            placeholder={contactFormNamePlaceholder}
+            required
+          />
           <input
             name="email"
             type="email"
-            placeholder="Email adress"
+            placeholder={contactFormEmailAdressPlaceholder}
             required
           />
         </div>
-        <input name="subject" type="text" placeholder="Subjects" required />
-        <textarea name="message" id="" placeholder="Message" required />
+        <input
+          name="subject"
+          type="text"
+          placeholder={contactFormSubjectsPlaceholder}
+          required
+        />
+        <textarea
+          name="message"
+          id=""
+          placeholder={contactFormMessagePlaceholder}
+          required
+        />
         <input type="hidden" name="_next" value={'http://localhost:3000/'} />
         <input
           type="hidden"
@@ -41,12 +66,12 @@ export function ContactSection() {
           value={'Your message has been received!'}
         />
         <DefaultButton
-          label="Send message"
+          label={sendMessage}
           icon={<IoPaperPlaneOutline size={20} />}
         />
       </ContactFormContainer>
       <ContactInfosContainer className="ContactInfosContainer">
-        <h3>Get In Touch</h3>
+        <h3>{contactInfoTitle}</h3>
         <ContactInfoWrapper>
           <div className="ContactInfoDiv">
             <div>

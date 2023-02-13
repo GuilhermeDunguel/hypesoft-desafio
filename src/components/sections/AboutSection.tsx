@@ -6,13 +6,22 @@ import {
 } from '../../styles/components/sections/AboutSection'
 
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
-import React from 'react'
+import React, { useContext } from 'react'
 import Image from 'next/image'
 import { DefaultButton } from '../DefaultButton'
+import { TranslationContext } from '@/context/TranslationContext'
 
 export function AboutSection() {
+  const {
+    aboutTitle,
+    aboutDescription,
+    aboutYearsOfExperience,
+    aboutCompletedProjects,
+    sayHi,
+  } = useContext(TranslationContext)
+
   return (
-    <AboutSectionContainer id="about">
+    <AboutSectionContainer id="about" data-testid="about">
       <AboutImageWrapper>
         <Image
           src={'https://i.imgur.com/FOFaDyr.jpg'}
@@ -26,29 +35,21 @@ export function AboutSection() {
         />
       </AboutImageWrapper>
       <AboutTextsWrapper>
-        <h2>
-          Front-end and Mobile Developer, focused on JavaScript&apos;s
-          Technologies.
-        </h2>
-        <p>
-          Throughout my career, i&apos;ve worked with the latest technologies,
-          aways focusing on understanding the customer needs and his
-          satisfaction. My objective as a Developer is to be the greatest i can
-          be, learning new technologies and exploring this universe that i love.
-        </p>
+        <h2>{aboutTitle}</h2>
+        <p>{aboutDescription}</p>
         <AboutExperienceAndProjectsWrapper>
           <div>
             <span>1+</span>
-            <p>Years of Experience</p>
+            <p>{aboutYearsOfExperience}</p>
           </div>
           <div>
             <span>28+</span>
-            <p>Completed Projects</p>
+            <p>{aboutCompletedProjects}</p>
           </div>
         </AboutExperienceAndProjectsWrapper>
 
         <DefaultButton
-          label={'Say hi'}
+          label={sayHi}
           icon={<HiOutlineArrowNarrowRight size={30} />}
           link={'#contact'}
         />

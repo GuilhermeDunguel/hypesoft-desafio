@@ -2,14 +2,17 @@ import {
   MySelectedWorkCardsWrapper,
   MySelectedWorkContainer,
 } from '../../styles/components/sections/MySelectedWorkSection'
-import React from 'react'
+import React, { useContext } from 'react'
 import { DefaultSectionHeading } from '../DefaultSectionHeading'
 import { MySelectedWorkCard } from '../MySelectedWorkCard'
+import { TranslationContext } from '@/context/TranslationContext'
 
 export function MySelectedWorkSection() {
+  const { WorksHeading } = useContext(TranslationContext)
+
   return (
-    <MySelectedWorkContainer id="works">
-      <DefaultSectionHeading label={'My Selected Work'} />
+    <MySelectedWorkContainer id="works" data-testid="works">
+      <DefaultSectionHeading label={WorksHeading} />
       <MySelectedWorkCardsWrapper>
         <MySelectedWorkCard
           imageUrl={'https://i.imgur.com/hLG0SEy.jpg'}

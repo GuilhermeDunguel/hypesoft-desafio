@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Footer, Header, MainSectionsWrapper } from '../styles/index'
+import { Footer, MainSectionsWrapper } from '../styles/index'
 import { PresentationSection } from '../components/sections/PresentationSection'
 import { AboutSection } from '../components/sections/AboutSection'
 import { MyServiceSection } from '../components/sections/MyServiceSection'
@@ -10,8 +10,13 @@ import { ContactSection } from '../components/sections/ContactSection'
 
 import Image from 'next/image'
 import { TestimonialsSection } from '../components/sections/TestimonialsSection'
+import { useContext } from 'react'
+import { TranslationContext } from '@/context/TranslationContext'
+import { MainHeader } from '../components/MainHeader'
 
 export default function Home() {
+  const { madeWith, byGuilhermeAnd } = useContext(TranslationContext)
+
   return (
     <>
       <Head>
@@ -21,14 +26,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.jpeg" />
       </Head>
       <main>
-        <Header>
-          <nav>
-            <a href="#about">ABOUT</a>
-            <a href="#services">SERVICES</a>
-            <a href="#works">WORKS</a>
-            <a href="#contact">CONTACT</a>
-          </nav>
-        </Header>
+        <MainHeader />
         <PresentationSection />
         <MainSectionsWrapper>
           <AboutSection />
@@ -39,7 +37,7 @@ export default function Home() {
           <TestimonialsSection />
           <ContactSection />
         </MainSectionsWrapper>
-        <Footer>
+        <Footer id="mainFooter" data-testid="mainFooter">
           <Image
             title="HypesoftLogo-Footer"
             src={'/HypesoftLogo.png'}
@@ -48,8 +46,8 @@ export default function Home() {
             height={59}
           />
           <span>
-            Made with <strong className="CreditsHeart">♥</strong> by Guilherme
-            and <strong>Hypesoft</strong>
+            {madeWith} <strong className="CreditsHeart">♥</strong>{' '}
+            {byGuilhermeAnd} <strong>Hypesoft</strong>
           </span>
         </Footer>
       </main>

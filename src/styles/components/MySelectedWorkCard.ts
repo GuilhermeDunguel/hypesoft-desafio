@@ -61,8 +61,6 @@ export const MySelectedWorkCardFooter = styled.footer`
   gap: 1.25rem;
   
   min-width: 310px;
-
-  overflow: hidden;
   
   border-radius: 0 0 8px 8px;
   background-color: ${props => props.theme.gray50};
@@ -83,6 +81,7 @@ export const ViewProjectButtonWrapper = styled.button`
   gap: 0.5rem;
   
   color: ${props => props.theme.gray800};
+  overflow: hidden;
 
   background: none;
   border: none;

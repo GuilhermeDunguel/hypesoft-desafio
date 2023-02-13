@@ -1,17 +1,19 @@
-import React from 'react'
+import { TranslationContext } from '@/context/TranslationContext'
+import React, { useContext } from 'react'
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import { CallToActionSectionContainer } from '../../styles/components/sections/CallToActionSection'
 import { DefaultButton } from '../DefaultButton'
 
 export function CallToActionSection() {
+  const { ctoTitle, ctoTogether, hireMe } = useContext(TranslationContext)
+
   return (
-    <CallToActionSectionContainer>
+    <CallToActionSectionContainer id="callToAction" data-testid="callToAction">
       <p>
-        Got a project in mind? Let&apos;s make something awesome{' '}
-        <span>together</span>.
+        {ctoTitle} <span>{ctoTogether}</span>.
       </p>
       <DefaultButton
-        label={'Hire me'}
+        label={hireMe}
         icon={<HiOutlineArrowNarrowRight size={30} />}
         link={'#contact'}
       />

@@ -2,9 +2,10 @@ import {
   TestimonialButton,
   TestimonialSelectorButtonWrapper,
 } from '../styles/components/DefaultTestimonialSelectorButton'
-import React from 'react'
+import React, { useContext } from 'react'
 
 import Image from 'next/image'
+import { TranslationContext } from '@/context/TranslationContext'
 
 export interface DefaultTestimonalSelectorButtonProps {
   witnessProfileImageUrl: string
@@ -23,6 +24,7 @@ export function DefaultTestimonalSelectorButton({
   witnessSelector,
   witnessSelected,
 }: DefaultTestimonalSelectorButtonProps) {
+  const { testimonialWitnessRole } = useContext(TranslationContext)
   return (
     <TestimonialSelectorButtonWrapper active={witnessName === witnessSelected}>
       <Image
@@ -34,7 +36,8 @@ export function DefaultTestimonalSelectorButton({
       <div>
         <h3>{witnessName}</h3>
         <p>
-          {witnessRole} of <strong>{witnessCompany}</strong>
+          {witnessRole} {testimonialWitnessRole}{' '}
+          <strong>{witnessCompany}</strong>
         </p>
       </div>
       <TestimonialButton onClick={() => witnessSelector(witnessName)} />

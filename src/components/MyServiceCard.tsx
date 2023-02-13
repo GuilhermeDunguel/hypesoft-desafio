@@ -3,9 +3,10 @@ import {
   MyServiceCardContainer,
   MyServiceCardFooter,
 } from '../styles/components/MyServiceCard'
-import React, { ReactNode } from 'react'
+import React, { ReactNode, useContext } from 'react'
 
 import { BsArrowRight } from 'react-icons/bs'
+import { TranslationContext } from '@/context/TranslationContext'
 
 export interface MyServiceCardProps {
   icon: ReactNode
@@ -13,13 +14,15 @@ export interface MyServiceCardProps {
 }
 
 export function MyServiceCard({ icon, label }: MyServiceCardProps) {
+  const { ServiceCTO } = useContext(TranslationContext)
+
   return (
     <MyServiceCardContainer>
       {icon}
       <MyServiceCardFooter>
         <p>{label}</p>
         <button>
-          <span>DISCUSS NOW</span>
+          <span>{ServiceCTO}</span>
           <BsArrowRight size={30} />
         </button>
         <DiscussNowLink href="#contact" />

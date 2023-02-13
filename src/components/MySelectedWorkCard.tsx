@@ -4,10 +4,11 @@ import {
   MySelectedWorkCardImageWrapper,
   ViewProjectButtonWrapper,
 } from '../styles/components/MySelectedWorkCard'
-import React from 'react'
+import React, { useContext } from 'react'
 
 import Image from 'next/image'
 import { BsArrowRight } from 'react-icons/bs'
+import { TranslationContext } from '@/context/TranslationContext'
 
 export interface MySelectedWorkProps {
   imageUrl: string
@@ -20,6 +21,8 @@ export function MySelectedWorkCard({
   label,
   projectUrl,
 }: MySelectedWorkProps) {
+  const { WorksCTO } = useContext(TranslationContext)
+
   return (
     <MySelectedWorkCardContainer>
       <MySelectedWorkCardImageWrapper>
@@ -36,7 +39,7 @@ export function MySelectedWorkCard({
       <MySelectedWorkCardFooter>
         <p>{label}</p>
         <ViewProjectButtonWrapper>
-          <span>VIEW PROJECT</span>
+          <span>{WorksCTO}</span>
           <BsArrowRight size={30} />
         </ViewProjectButtonWrapper>
       </MySelectedWorkCardFooter>

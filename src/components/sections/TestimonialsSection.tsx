@@ -5,12 +5,13 @@ import {
   TestimonialTextSide,
   TestimonialWrapper,
 } from '../../styles/components/sections/TestimonialsSection'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { DefaultSectionHeading } from '../DefaultSectionHeading'
 
 import { DefaultTestimonalSelectorButton } from '../DefaultTestimonalSelectorButton'
 
 import { AiFillStar } from 'react-icons/ai'
+import { TranslationContext } from '@/context/TranslationContext'
 
 interface testimonialsProps {
   witness: {
@@ -27,6 +28,9 @@ interface testimonialsProps {
 }
 
 export function TestimonialsSection() {
+  const { testimonialStarRating, testimonialHeading } =
+    useContext(TranslationContext)
+
   const [selectedWitness, setSelectedWitness] = useState('Lucas Mendonça')
 
   const testimonialsArray: testimonialsProps[] = [
@@ -81,8 +85,8 @@ export function TestimonialsSection() {
   ]
 
   return (
-    <TestimonialsSectionContainer>
-      <DefaultSectionHeading label={'Testimonial'} />
+    <TestimonialsSectionContainer id="testimonial" data-testid="testimonial">
+      <DefaultSectionHeading label={testimonialHeading} />
       <TestimonialsWrapper>
         <TestimonialSelector>
           {testimonialsArray.map((witness) => {
@@ -107,7 +111,9 @@ export function TestimonialsSection() {
                 <TestimonialWrapper key={witness.witness.name}>
                   <div>
                     <AiFillStar />
-                    <h3>{witness.testimonial.stars} Star Rating</h3>
+                    <h3>
+                      {witness.testimonial.stars} {testimonialStarRating}
+                    </h3>
                   </div>
                   <p>“{witness.testimonial.text}”</p>
                 </TestimonialWrapper>

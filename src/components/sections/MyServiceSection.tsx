@@ -2,17 +2,20 @@ import {
   MyServiceCardsWrapper,
   MyServiceSectionContainer,
 } from '../../styles/components/sections/MyServiceSection'
-import React from 'react'
+import React, { useContext } from 'react'
 import { MyServiceCard } from '../MyServiceCard'
 import { FiLayers } from 'react-icons/fi'
 import { AiOutlineMobile } from 'react-icons/ai'
 import { BsCode } from 'react-icons/bs'
 import { DefaultSectionHeading } from '../DefaultSectionHeading'
+import { TranslationContext } from '@/context/TranslationContext'
 
 export function MyServiceSection() {
+  const { ServiceHeading } = useContext(TranslationContext)
+
   return (
-    <MyServiceSectionContainer id="services">
-      <DefaultSectionHeading label={'My Service'} />
+    <MyServiceSectionContainer id="services" data-testid="services">
+      <DefaultSectionHeading label={ServiceHeading} />
       <MyServiceCardsWrapper>
         <MyServiceCard icon={<FiLayers size={40} />} label="UI/UX Design" />
         <MyServiceCard

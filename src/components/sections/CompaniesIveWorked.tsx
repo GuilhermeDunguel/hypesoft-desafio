@@ -3,16 +3,22 @@ import {
   LogosContainer,
   LogosWrapper,
 } from '../../styles/components/sections/CompaniesIveWorked'
-import React from 'react'
+import React, { useContext } from 'react'
 import { BsArrowRight } from 'react-icons/bs'
 
 import Image from 'next/image'
+import { TranslationContext } from '@/context/TranslationContext'
 
 export function CompaniesIveWorked() {
+  const { iWorkedWith, Companies } = useContext(TranslationContext)
+
   return (
-    <CompaniesIveWorkedContainer>
+    <CompaniesIveWorkedContainer
+      id="companiesIveWorked"
+      data-testid="companiesIveWorked"
+    >
       <p>
-        I worked with <span>3+</span> Companies all over the World.
+        {iWorkedWith} <span>3+</span> {Companies}
       </p>
       <LogosContainer>
         <LogosWrapper>
