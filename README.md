@@ -1,38 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <h1>Hypesoft - Challenge</h1>
+</div>
 
-## Getting Started
+![Banner](https://i.imgur.com/VSRYWWe.jpg)
 
-First, run the development server:
+#### Seja bem vindo(a) ao Hypesoft - Challenge! Um projeto desenvolvido em caráter de testes de candidatos Hypesoft. Leia os tópicos abaixo se quiser saber mais, acessar o projeto ou roda-lo localmente.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## 🟢 Sobre:
+
+<br>
+
+### 🗂️ O projeto: 
+&nbsp; • Consistindo em uma Landing Page para apresentação do candidato, o projeto foi desenvolvido com base no layout entregue, seguindo todas as regras de espaçamento, tamanho, alinhamento propostas.\
+&nbsp; • Construido em Next com TypeScript, utilizei o Styled-Components para fazer as estilizações, Jest + React Testing Library para fazer testes unitários e garantir que a aplicação tenha uma confiabilidade maior.
+
+<br>
+
+### 🔗 Links: 
+&nbsp; • Deploy: <a href="https://hypesoft-desafio.vercel.app" target="_blank">Clique aqui</a>
+
+<br>
+
+### ❗ Instruções para rodar localmente:
+#### É possível acessar este projeto pelo deploy, mas caso queira testa-lo localmente para analisar ou até fazer modificações, siga as instruções abaixo!
+
+<strong> 1️⃣ • Clone o repositório usando o GIT </strong>
+
+```
+git clone git@github.com:GuilhermeDunguel/hypesoft-desafio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<strong> 2️⃣ • Instale as dependências do projeto</strong>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<br>
 
-## Learn More
+<strong> 3️⃣ • Inicie a aplicações em um servidor local</strong>
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 🖥️ Linguagens e ferramentas: 
+• <img width="20px" src="https://skillicons.dev/icons?i=nextjs" alt="react icon"/> NextJS\
+• <img width="20px" src="https://skillicons.dev/icons?i=typescript" alt="typescript icon"/> TypeScript\
+• <img width="20px" src="https://skillicons.dev/icons?i=styledcomponents" alt="styled-components icon"/> Styled-Components\
+• <img width="20px" src="https://skillicons.dev/icons?i=jest" alt="jest icon"/> Jest\
+• <img width="20px" src="https://testing-library.com/img/octopus-128x128.png" alt="testing library icon"/> React Testing Library\
+• <img width=20px src="https://skillicons.dev/icons?i=react"> React Icons
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## ✏️ Criado por
+<div align='center'>
+  <img src="https://avatars.githubusercontent.com/u/89926690?v=4" width="100px">
+  <br>
+  <a align='center' src="https://github.com/GuilhermeDunguel">Guilherme Dunguel</a>
+</div>
