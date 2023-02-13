@@ -55,6 +55,7 @@ npm run dev
 • <img width="20px" src="https://skillicons.dev/icons?i=styledcomponents" alt="styled-components icon"/> Styled-Components\
 • <img width="20px" src="https://skillicons.dev/icons?i=jest" alt="jest icon"/> Jest\
 • <img width="20px" src="https://testing-library.com/img/octopus-128x128.png" alt="testing library icon"/> React Testing Library\
+• <img width="20px" src="https://avatars.githubusercontent.com/u/22632046?s=280&v=4" alt="storybook icon"/> Storybook\
 • <img width=20px src="https://skillicons.dev/icons?i=react"> React Icons
 
 ## ✏️ Criado por
