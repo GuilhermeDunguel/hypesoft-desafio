@@ -1,7 +1,6 @@
-import { DefaultSectionHeadingWrapper } from '@/styles/components/DefaultSectionHeading'
+import { DefaultSectionHeadingWrapper } from '../styles/components/DefaultSectionHeading'
 import React from 'react'
-
-interface DefaultSectionHeadingProps {
+export interface DefaultSectionHeadingProps {
   label: string
 }
 

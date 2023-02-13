@@ -4,9 +4,9 @@ import {
   ContactInfoWrapper,
   ContactSectionContainer,
   SocialButtonsWrapper,
-} from '@/styles/components/sections/ContactSection'
+} from '../../styles/components/sections/ContactSection'
 import React from 'react'
-import DefaultButton from '../DefaultButton'
+import { DefaultButton } from '../DefaultButton'
 
 import { IoPaperPlaneOutline } from 'react-icons/io5'
 import { FiMapPin, FiPhone } from 'react-icons/fi'

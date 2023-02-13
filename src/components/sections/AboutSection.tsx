@@ -3,12 +3,12 @@ import {
   AboutImageWrapper,
   AboutSectionContainer,
   AboutTextsWrapper,
-} from '@/styles/components/sections/AboutSection'
+} from '../../styles/components/sections/AboutSection'
 
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import React from 'react'
 import Image from 'next/image'
-import DefaultButton from '../DefaultButton'
+import { DefaultButton } from '../DefaultButton'
 
 export function AboutSection() {
   return (

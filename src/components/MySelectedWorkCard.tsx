@@ -3,13 +3,13 @@ import {
   MySelectedWorkCardFooter,
   MySelectedWorkCardImageWrapper,
   ViewProjectButtonWrapper,
-} from '@/styles/components/MySelectedWorkCard'
+} from '../styles/components/MySelectedWorkCard'
 import React from 'react'
 
 import Image from 'next/image'
 import { BsArrowRight } from 'react-icons/bs'
 
-interface MySelectedWorkProps {
+export interface MySelectedWorkProps {
   imageUrl: string
   label: string
   projectUrl: string

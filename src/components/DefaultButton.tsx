@@ -1,14 +1,14 @@
-import { Button } from '@/styles/components/DefaultButton'
+import { Button } from '../styles/components/DefaultButton'
 import React, { ReactNode } from 'react'
 
-interface DefaultButtonProps {
+export interface DefaultButtonProps {
   label: string
   secondary?: boolean
   icon?: ReactNode
   link?: string
 }
 
-export default function DefaultButton({
+export function DefaultButton({
   label,
   secondary,
   icon,

@@ -2,12 +2,12 @@ import {
   DiscussNowLink,
   MyServiceCardContainer,
   MyServiceCardFooter,
-} from '@/styles/components/MyServiceCard'
+} from '../styles/components/MyServiceCard'
 import React, { ReactNode } from 'react'
 
 import { BsArrowRight } from 'react-icons/bs'
 
-interface MyServiceCardProps {
+export interface MyServiceCardProps {
   icon: ReactNode
   label: string
 }

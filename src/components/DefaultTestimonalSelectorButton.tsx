@@ -1,12 +1,12 @@
 import {
   TestimonialButton,
   TestimonialSelectorButtonWrapper,
-} from '@/styles/components/DefaultTestimonialSelectorButton'
+} from '../styles/components/DefaultTestimonialSelectorButton'
 import React from 'react'
 
 import Image from 'next/image'
 
-interface DefaultTestimonalSelectorButtonProps {
+export interface DefaultTestimonalSelectorButtonProps {
   witnessProfileImageUrl: string
   witnessName: string
   witnessRole: string

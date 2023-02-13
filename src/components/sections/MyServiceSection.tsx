@@ -1,7 +1,7 @@
 import {
   MyServiceCardsWrapper,
   MyServiceSectionContainer,
-} from '@/styles/components/sections/MyServiceSection'
+} from '../../styles/components/sections/MyServiceSection'
 import React from 'react'
 import { MyServiceCard } from '../MyServiceCard'
 import { FiLayers } from 'react-icons/fi'

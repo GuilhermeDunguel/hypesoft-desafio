@@ -60,6 +60,8 @@ export const MySelectedWorkCardFooter = styled.footer`
   flex-direction: column;
   gap: 1.25rem;
   
+  min-width: 310px;
+
   overflow: hidden;
   
   border-radius: 0 0 8px 8px;

@@ -2,7 +2,7 @@ import {
   CompaniesIveWorkedContainer,
   LogosContainer,
   LogosWrapper,
-} from '@/styles/components/sections/CompaniesIveWorked'
+} from '../../styles/components/sections/CompaniesIveWorked'
 import React from 'react'
 import { BsArrowRight } from 'react-icons/bs'
 

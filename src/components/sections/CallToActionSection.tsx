@@ -1,7 +1,7 @@
 import React from 'react'
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import { CallToActionSectionContainer } from '../../styles/components/sections/CallToActionSection'
-import DefaultButton from '../DefaultButton'
+import { DefaultButton } from '../DefaultButton'
 
 export function CallToActionSection() {
   return (

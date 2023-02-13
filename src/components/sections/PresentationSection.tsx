@@ -9,7 +9,7 @@ import {
   PresentationSectionWrapper,
   PresentationTextAnButtons,
 } from '../../styles/components/sections/PresentationSection'
-import DefaultButton from '../DefaultButton'
+import { DefaultButton } from '../DefaultButton'
 
 import Image from 'next/image'
 
