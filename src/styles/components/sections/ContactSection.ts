@@ -150,15 +150,11 @@ export const SocialButtonsWrapper = styled.div`
       border-radius: 500px;
       background-color: ${props => props.theme.gray50};
 
-      transition: filter 0.2s;
-
-      &:nth-child(2) {
-        color: ${props => props.theme.gray50};
-        background-color: ${props => props.theme.purple500};
-      }
+      transition: 0.2s;
 
       &:hover {
-        filter: brightness(90%);
+        color: ${props => props.theme.gray50};
+        background-color: ${props => props.theme.purple500};
       }
     }
 `
